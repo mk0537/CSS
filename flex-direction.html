@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        section {
+            display: flex;
+            border: 1px dashed black;
+        }
+
+        div {
+            width: 60px;
+            height: 60px;
+            text-align: center; /* 글자 가운데 정렬 */
+            font-size: 2em;
+            color: white;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        div:nth-child(1) {
+            background: yellowgreen; 
+        }
+
+        div:nth-child(2) {
+            background: violet;
+        }
+
+        div:nth-child(3) {
+            background: cornflowerblue;
+        }
+
+        /* flex-direction : 요소들을 어떤 방향으로 배치할지
+                                주 축(main axis) 을 결정 */
+                                
+        /* row:행(가로), cloumn:열(세로) */
+        .row {
+            flex-direction: row; /* 요소들을 가로 배치 */
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse; /* 오른쪽 부터 거꾸로 가로 배치 */
+        }
+
+        .column {
+            flex-direction: column; /* 세로 배치 */
+        }
+
+        .column-reverse {
+            flex-direction: column-reverse; /* 밑에 부터 거꾸로 세로 배치 */
+        }
+    </style>
+</head>
+<body>
+    <h3>row</h3>
+    <section class="row">  <!-- <section> : 시맨틱 태그 -->
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </section>
+
+    <section class="row-reverse">  <!-- <section> : 시맨틱 태그 -->
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </section>
+
+    <section class="column">  <!-- <section> : 시맨틱 태그 -->
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </section>
+
+    <section class="column-reverse">  <!-- <section> : 시맨틱 태그 -->
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </section>
+</body>
+</html>

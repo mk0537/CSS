@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child.html</title>
+    <style>
+        #header > h1{  /* '>' : 자신의 바로 밑에 있는 태그에만 적용 */
+            color: red;
+        }
+
+        #contents > h1 { /* '>' : 자신의 직계 자식에게만 적용 */
+            color:blue; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 자식 선택자 -->
+    <div id="header">
+        <h1>나는 header의 자식이오</h1>
+    
+        <div id="nav">
+            <h1>navigation</h1>
+        </div>
+        
+        <div id="nav1">
+            <h1>navigation</h1>
+        </div>
+        
+        <div id="contents">
+            <h1>contents의 자식</h1>
+        </div>
+    </div>
+</body>
+</html>

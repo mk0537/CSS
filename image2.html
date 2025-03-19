@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image2.html</title>
+    <style>
+        p{ /* 모든 p 태그에 적용 */
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+        }
+        .b1{
+            background: url(image/background.jpg) no-repeat 
+            right bottom; /* 오른쪽 아래에 위치 */
+        }
+        .b2{
+            background: url(image/background.jpg) no-repeat
+            20px 100px; /* x좌표 y좌표 */
+        }
+        .b3{
+            background: url(image/background.jpg) no-repeat
+            center; /* 가운데 위치 */
+        }
+        .b4{
+            background: url(image/background.jpg) no-repeat
+            70% 10%; /* 가로에서 70%에 위치, 새로에서 10%에 위치 */        
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 이미지 위치 변경하기 -->
+     <p class="b1">
+        나는 눈이 좋아서 꿈에 눈이 오나봐
+     </p>
+     <p class="b2">
+        나는 눈이 좋아서 꿈에 눈이 오나봐
+     </p>
+     <p class="b3">
+        나는 눈이 좋아서 꿈에 눈이 오나봐
+     </p>
+     <p class="b4">
+        나는 눈이 좋아서 꿈에 눈이 오나봐
+     </p>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+       html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* 화면 가운데로 모은다 */
+            align-items: center; /* 요소들 정중앙 배치 */
+            background: rgb(209, 231, 238);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* 세로 배치 */
+            align-items: center; /* 요소들 정중앙 배치 */
+            justify-content: center; /* 화면 가운데로 모은다 */
+            border: 1px solid white;
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 박스 그림자 */
+            border-radius: 10px; /* 박스 둥글게 */  
+            background: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+            width: 350px;
+            height: 20px;
+            border: 1px solid darkgray;
+            border-radius: 3px;
+        }
+
+        .text {
+            padding: 5px;
+            width: 350px;
+            height: 22px;
+        }
+
+        .text2 {
+            padding: 5px;
+            width: 260px;
+            height: 22px;
+        }
+
+        .text3 {
+            padding: 5px;
+            width: 180px;
+            height: 22px;
+        }
+
+        .login {
+            margin-left: 10px;
+            font-size: 15px;
+            text-align: center;
+            width: 370px;
+            height: 40px;
+            background: blue;
+            border-radius: 5px;
+            border-color: blue;
+            color: white;
+        }
+
+        .login2 {
+            font-size: 13px;
+            text-align: center;
+            width: 70px;
+            height: 35px;
+            background: blue;
+            border-radius: 5px;
+            border-color: blue;
+            color: white;
+        }
+
+        .dropdown {
+            padding: 5px;
+            margin: 5px;
+            width: 130px;
+            height: 35px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .login:hover {
+            background: lightblue;
+            border: 1px solid skyblue;
+            color: black;
+        }
+        
+        .login2:hover {
+            background: lightblue;
+            border: 1px solid skyblue;
+            color: black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div  class="container">
+    <h1>회원가입</h1>
+        <ul>
+            <li>이름</li>
+            <li><input class="text" type="text" placeholder="이름 입력"> </li>
+            <li>아이디</li>
+             <li><input class="text2" type="text" placeholder="아이디 입력">
+                <input class="login2" type="button" value="중복체크"> </li>
+                <br>
+            <li>비밀번호</li>
+            <li><input class="text" type="text" placeholder="비밀번호 입력"> </li>
+            <li>비밀번호 확인</li>
+            <li><input class="text" type="text" placeholder="비밀번호 확인"> </li>
+            <li>이메일</li>
+            <li><input class="text3" type="email" placeholder="이메일 아이디">
+               @ 
+               <select class="dropdown">
+                    <option>daum.net</option>
+                    <option selected>naver.com</option>
+                    <option>gmail.com</option>
+                    <option>nate.com</option>
+                </select>  </li>
+               <br>
+                <br>
+            <input class="login" type="button" value="회원가입">
+        <p>이미 계정이 있으신가요?&nbsp;<a href=login.html>로그인</a></p>
+        </ul>
+    </div>
+</body>
+</html>

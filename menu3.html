@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        #header {
+            list-style: none;
+            display: flex;
+            position: relative;
+        }
+
+        ul {
+            list-style: none;;
+        }
+
+        .box {
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            color: blue;
+            padding: 10px;
+            text-align: center;
+            font-size:30px;
+            font-weight: bold;
+        }
+        
+        .box2 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            list-style: none;
+        }
+
+        li {
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            color: blue;
+            padding: 10px;
+            text-align: center;
+            font-size:30px;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .box:hover + .box2,
+        .box2:hover {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header"> 
+        <div>
+            <a class="box" href="#">HTML</a>
+            <ul class="box2">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+    </div>
+    <div id="header"> 
+        <div>
+            <a class="box" href="#">CSS</a>
+            <ul class="box2">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+    </div>
+    <div id="header"> 
+        <div>
+            <a class="box" href="#">Javascript</a>
+            <ul class="box2">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+    </div>
+    <div id="header"> 
+        <div>
+            <a class="box" href="#">JQuery</a>
+            <ul class="box2">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+    </div>
+    <div id="header"> 
+        <div>
+            <a class="box" href="#">JSP</a>
+            <ul class="box2">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+    </div>
+</div>
+</body>
+</html>
